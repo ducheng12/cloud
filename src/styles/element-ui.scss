@@ -1,0 +1,76 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+// 颜色重置
+.el-button--primary {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+
+.el-button--primary:hover, .el-button--primary:focus {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+  opacity: .8;
+}
+
+.el-button--primary.is-active, .el-button--primary:active {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+// switch 开关
+.el-switch.is-checked .el-switch__core {
+  border-color: #795c98;
+  background-color: #795c98;
+}
+
+// 分页选择显示
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #795c98;
+}
